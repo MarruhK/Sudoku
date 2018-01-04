@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Sudoku Game </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- makes web responsive -->		
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- link to main stylesheet -->
+	</head>
+
+	<body>
+		<h1 class="banner"> Sudoku Game </h1>
+    
+		<br />
+		<br />
+		<br /> 
+
+		<div class="main-div">
+			<br />
+
+			<div class="banner-div">
+				<img src="/images/Sudoku/sudoku0.png" class="proj-banner">
+			</div>
+
+			<div>
+				<a href="https://github.com/MarruhK/Sudoku"> 
+					<button class="buttons"> 
+						<p class="button-link"> VISIT GITHUB </p> 
+					</button> 
+				</a>
+			</div>
+
+			<h1> Project Goals </h1>	
+			<hr> 		
+			<ul>
+				<li>
+					<p class="list-elements"> Familiarize myself with the Collections Framework </p>
+				</li>
+				<li>
+					<p class="list-elements"> Further understanding of the Swing Library </p>
+				</li>
+				<li>
+					<p class="list-elements"> Implementation of an anonymous class </p>
+				</li>
+				<li>
+					<p class="list-elements"> Complete a project which I found difficult to the point where I wouldn't know where to begin. </p>
+				</li>
+			</ul>
+
+
+			<h1> Obstacles I Faced </h1>
+			<hr> 
+
+			<div class="text-div">
+				<h3> Generating a solvable board </h3>
+				<p> Generating the board was something that I found extremely difficult. At first, I had no idea on how to mathematically gerate the board; however, I found a method to obtain a "unique" board. I recorded one valid sudoku board and used this to generate new boards. 
+				</p>
+				<p> Each row, column and box should have unique values ranging from 1-9. Creating three groups, each group being three rows, grants the ability to shuffle around the board (via the three groups), while not breaking any sudoku rules. I used the "Fisher-Yates shuffle" to randomize these groups. Within these groups, I would also shuffle the three rows in it. After this shuffling, the program would shuffle the columns in the exact same way, creating a "unique" board.</p> 				
+			</div>
+
+			<div class="text-div">
+				<h3> Taking on too much at once </h3>
+				<p> When I began this project, I wanted to have multiple functionalities and tried to implement them all at once. This was a big head ache and resulted in many logical errors within my code, resulting in me discarding many lines of code. I've learned that I should keep it simple and begin with the most basic functionalities and once that is complete, I should add the more advanced functionalities.
+				</p>								
+			</div>
+
+			<h1> Reflections </h1>
+			<hr> 
+			<div class="text-div">
+				<p> Looking back, I'm happy with the overall project; however, there are still many things I would like to add. I would like to add additional buttons, such as saving (serialization), undo and difficulty. Along with this, the implementation of the red textfields (when an illegal number is placed) is very clunky and messy. This is something I would like to clean up when I revisit this project. </p>					
+			</div>
+		</div>
+    
+		<footer>
+			<div class = "footer">
+				<h1 class="footer"> Contact Info </h1>
+				<table>
+					<tr>
+						<td>
+							<p class="footer"> E-Mail: </p>
+						</td>							
+						<td>
+							<a href="mailto:mo.hamza.khurram@gmail.com" class="footer"> Mo.Hamza.Khurram@gmail.com
+							</a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<p class="footer"> GitHub: </p>
+						</td>							
+						<td>
+							<a href="https://github.com/MarruhK/" class="footer"> https://github.com/MarruhK/ </a>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<p class="footer"> Phone: </p>
+						</td>							
+						<td>
+							<p class="footer"> 905 - 691 - 8961 </p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</footer>
+	</body>
+</html>
